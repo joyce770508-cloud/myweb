@@ -1,9 +1,10 @@
+HTML
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>歡迎來到我的第一個 AI 網站</title>
+  <title>Freetime 人生咖啡</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -11,6 +12,7 @@
       font-family: Arial, "Microsoft JhengHei", sans-serif;
       background: #f4f8fc;
       color: #243447;
+      line-height: 1.6;
     }
     header {
       background: linear-gradient(135deg, #1686a7, #374ca6);
@@ -19,24 +21,29 @@
       padding: 65px 20px;
     }
     header h1 { font-size: 36px; margin: 0 0 14px; }
-    header p { font-size: 18px; }
+    header p { font-size: 18px; margin: 0; }
     nav {
       background: white;
       text-align: center;
       padding: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     nav a {
       color: #236b96;
       text-decoration: none;
-      margin: 10px;
+      margin: 0 16px;
       font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
       max-width: 1000px;
       margin: 35px auto;
       padding: 0 20px;
     }
-    h2 { text-align: center; color: #205c91; }
+    h2 { text-align: center; color: #205c91; margin-bottom: 20px; }
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -47,16 +54,22 @@
       background: white;
       padding: 28px 20px;
       border-radius: 16px;
-      box-shadow: 0 4px 15px #00000012;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
       text-align: center;
     }
-    .card h3 { color: #197fa0; }
+    .card h3 { color: #197fa0; margin-top: 0; }
     .about {
       background: white;
-      padding: 25px;
-      margin-top: 35px;
+      padding: 35px 25px;
+      margin-top: 40px;
       border-radius: 16px;
       text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    }
+    .about p {
+      font-size: 16px;
+      color: #4a5568;
+      margin: 10px 0;
     }
     footer {
       text-align: center;
@@ -69,42 +82,53 @@
       header { padding: 45px 15px; }
       header h1 { font-size: 26px; }
       .cards { grid-template-columns: 1fr; }
-      nav a { display: inline-block; margin: 7px; }
+      nav a { display: inline-block; margin: 7px 10px; }
     }
   </style>
 </head>
 <body>
+
+  <!-- 頂部大標題 -->
   <header>
-    <h1>  Freetime人生咖沸</h1>
-    <p>老宅的底蘊 襯托咖啡的香氣 </p>
+    <h1>Freetime 人生咖啡</h1>
+    <p>老宅的底蘊 襯托咖啡的香氣</p>
   </header>
+
+  <!-- 導覽列選單：連回首頁、跳到特色、跳到關於，以及之前建立的聯絡頁面 -->
   <nav>
     <a href="#home">首頁</a>
-    <a href="#features">老宅的外表搭配充滿回憶的擺設，時光不停回朔直到找到金色記憶球</a>
-    <a href="#about">一家三口熱愛老東西，如果你也有老物分享歡迎聯絡我們</a>
+    <a href="#features">空間特色</a>
+    <a href="#about">關於我們</a>
+    <a href="contact.html">聯絡我們</a>
   </nav>
+
   <main id="home">
-    <h2 id="features">網站特色</h2>
+    <!-- 特色介紹區 -->
+    <h2 id="features">老宅時光與回憶</h2>
     <div class="cards">
       <div class="card">
-        <h3>🤖 AI 協助</h3>
-        <p>利用人工智慧產生網站程式碼。</p>
+        <h3>☕ 咖啡香氣</h3>
+        <p>用心烘焙的每一杯香醇，在老宅空間中靜靜沉澱。</p>
       </div>
       <div class="card">
-        <h3>📱 RWD 設計</h3>
-        <p>適合手機、平板及電腦瀏覽。</p>
+        <h3>🕰️ 金色記憶</h3>
+        <p>老宅的外表搭配充滿回憶的擺設，時光不停回溯，直到找到心底的金色記憶球。</p>
       </div>
       <div class="card">
-        <h3>🌐 GitHub 發布</h3>
-        <p>透過 GitHub Pages 將網站公開。</p>
+        <h3>📻 老物交流</h3>
+        <p>一家三口熱愛老東西，如果你也有老物想要分享，歡迎隨時找我們聊聊。</p>
       </div>
     </div>
+
+    <!-- 關於我們區塊 -->
     <section class="about" id="about">
-      <h2>關於這個網站</h2>
-      <p>這是我的 AI 網頁設計練習作品。</p>
-      <p>從建立儲存庫到完成網站，學習 AI 與 GitHub 的應用。</p>
+      <h2>關於 Freetime 人生咖啡</h2>
+      <p>老宅的外表搭配充滿回憶的擺設，時光不停回溯直到找到金色記憶球。</p>
+      <p>一家三口熱愛老東西，如果你也有老物分享歡迎聯絡我們！</p>
     </section>
   </main>
-  <footer>我的第一個 GitHub 網站｜AI 網頁設計練習</footer>
+
+  <footer>Freetime 人生咖啡 ｜ 歲月與香氣的交會處</footer>
+
 </body>
 </html>
