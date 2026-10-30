@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -41,6 +42,18 @@
       max-width: 1000px;
       margin: 35px auto;
       padding: 0 20px;
+    }
+    .hero-img-box {
+      text-align: center;
+      margin: 20px auto 40px;
+      max-width: 850px;
+    }
+    .hero-img-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.12);
     }
     h2 { text-align: center; color: #205c91; margin-bottom: 20px; }
     .cards {
@@ -87,13 +100,11 @@
 </head>
 <body>
 
-  <!-- 頂部大標題 -->
   <header>
     <h1>Freetime 人生咖沸</h1>
     <p>老宅的底蘊 襯托咖啡的香氣</p>
   </header>
 
-  <!-- 導覽列選單 -->
   <nav>
     <a href="#home">首頁</a>
     <a href="#features">空間特色</a>
@@ -102,9 +113,9 @@
   </nav>
 
   <main id="home">
-    <!-- 首頁圖片展示區 -->
-    <div style="text-align: center; margin: 25px 0 40px 0;">
-      <img src="freetime.png.jpg" alt="Freetime人生咖沸 空間與咖啡氛圍" style="width: 100%; max-width: 900px; height: auto; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); display: inline-block;">
+    <!-- 老宅彩色素描主圖 -->
+    <div class="hero-img-box">
+      <img src="./freetime.png.jpg" alt="Freetime人生咖沸 空間與咖啡氛圍">
     </div>
 
     <!-- 特色介紹區 -->
@@ -124,7 +135,6 @@
       </div>
     </div>
 
-    <!-- 關於我們區塊 -->
     <section class="about" id="about">
       <h2>關於 Freetime 人生咖沸</h2>
       <p>老宅的外表搭配充滿回憶的擺設，時光不停回溯直到找到金色記憶球。</p>
