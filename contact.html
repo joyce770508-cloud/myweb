@@ -4,7 +4,7 @@ HTML
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>聯絡我們 | Freetime 人生咖啡</title>
+  <title>聯絡我們 | Freetime 人生咖沸</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -13,8 +13,6 @@ HTML
       color: #243447;
       line-height: 1.6;
     }
-
-    /* 頂部 Header */
     header {
       background: linear-gradient(135deg, #1686a7, #374ca6);
       color: white;
@@ -23,8 +21,6 @@ HTML
     }
     header h1 { font-size: 36px; margin-bottom: 12px; }
     header p { font-size: 18px; opacity: 0.95; }
-
-    /* 導覽列 */
     nav {
       background: white;
       text-align: center;
@@ -42,8 +38,6 @@ HTML
       color: #1686a7;
       text-decoration: underline;
     }
-
-    /* 主體雙欄排版 */
     .contact-container {
       max-width: 1000px;
       margin: 40px auto;
@@ -52,8 +46,6 @@ HTML
       grid-template-columns: 1fr 1.2fr;
       gap: 40px;
     }
-
-    /* 左側店家資訊卡 */
     .info-box {
       background: white;
       padding: 35px 30px;
@@ -86,8 +78,6 @@ HTML
       color: #888;
       margin-top: 4px;
     }
-
-    /* 右側留言表單 */
     .form-box {
       background: white;
       padding: 35px 30px;
@@ -148,8 +138,6 @@ HTML
     .submit-btn:hover {
       opacity: 0.92;
     }
-
-    /* 頁尾 */
     footer {
       text-align: center;
       background: #243447;
@@ -157,23 +145,16 @@ HTML
       padding: 25px;
       margin-top: 50px;
     }
-
-    /* 手機直式排版相容 */
     @media (max-width: 768px) {
-      .contact-container {
-        grid-template-columns: 1fr;
-        margin: 25px auto;
-      }
-      .form-row {
-        grid-template-columns: 1fr;
-      }
+      .contact-container { grid-template-columns: 1fr; margin: 25px auto; }
+      .form-row { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Freetime 人生咖啡</h1>
+    <h1>Freetime 人生咖沸</h1>
     <p>老宅的底蘊 襯托咖啡的香氣</p>
   </header>
 
@@ -191,58 +172,58 @@ HTML
 
       <div class="info-item">
         <div class="info-label">聯絡電話</div>
-        <a href="tel:0988665685" class="info-value">0988-665-685 ↗</a>
+        <a href="tel:0987131464" class="info-value">0987-131-464↗</a>
         <div class="info-desc">歡迎來電預約或詢問店況</div>
       </div>
 
       <div class="info-item">
-        <div class="info-label">LINE 官方帳號</div>
-        <div class="info-value">va1018</div>
+        <div class="info-label">LINE 官方帳號 / 個人 ID</div>
+        <div class="info-value">請填寫你的LINE_ID</div>
         <div class="info-desc">加入 LINE 分享你的老物故事</div>
       </div>
 
       <div class="info-item">
         <div class="info-label">營業時間</div>
-        <div style="font-weight: bold; color: #334155;">週二至週日 11:00 - 19:00</div>
-        <div class="info-desc">週一固定公休（老物尋寶日）</div>
+        <div style="font-weight: bold; color: #334155;">週五至週ㄧ 11:00 - 19:00</div>
+        <div class="info-desc">週二三四固定公休（老物尋寶日）</div>
       </div>
     </div>
 
-    <!-- 右側留言表單 -->
+    <!-- 右側留言表單（已帶入專屬收信網址） -->
     <div class="form-box">
       <h2>留下你想對我們說的話</h2>
       <p class="form-subtitle">無論是老物交流、座位預約或合作洽詢，都歡迎寫信給我們。</p>
 
-      <form>
+      <form action="https://formspree.io/f/mgaalwwj" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label>如何稱呼您？ *</label>
-            <input type="text" placeholder="王小明" required>
+            <input type="text" name="顧客稱呼" placeholder="王小明" required>
           </div>
           <div class="form-group">
             <label>聯絡電話</label>
-            <input type="tel" placeholder="0912-345-678">
+            <input type="tel" name="聯絡電話" placeholder="0912-345-678">
           </div>
         </div>
 
         <div class="form-group">
           <label>電子郵件 *</label>
-          <input type="email" placeholder="example@email.com" required>
+          <input type="email" name="顧客信箱" placeholder="example@email.com" required>
         </div>
 
         <div class="form-group">
           <label>交流項目</label>
-          <select>
-            <option>老物收藏分享與交流</option>
-            <option>場地租借與合作</option>
-            <option>預約品嚐手沖咖啡</option>
-            <option>其他聊聊</option>
+          <select name="交流項目">
+            <option value="老物收藏分享與交流">老物收藏分享與交流</option>
+            <option value="場地租借與合作">場地租借與合作</option>
+            <option value="預約品嚐手沖咖啡">預約品嚐手沖咖啡</option>
+            <option value="其他聊聊">其他聊聊</option>
           </select>
         </div>
 
         <div class="form-group">
           <label>想說的話 / 需求說明 *</label>
-          <textarea rows="4" placeholder="請簡單與我們聊聊你的想法..." required></textarea>
+          <textarea rows="4" name="留言內容" placeholder="請簡單與我們聊聊你的想法..." required></textarea>
         </div>
 
         <button type="submit" class="submit-btn">送出留言 ↗</button>
@@ -250,7 +231,7 @@ HTML
     </div>
   </main>
 
-  <footer>Freetime 人生咖啡 ｜ 歲月與香氣的交會處</footer>
+  <footer>Freetime 人生咖沸 ｜ 歲月與香氣的交會處</footer>
 
 </body>
 </html>
