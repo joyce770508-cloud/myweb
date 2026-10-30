@@ -1,4 +1,3 @@
-HTML
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -9,33 +8,35 @@ HTML
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: Arial, "Microsoft JhengHei", sans-serif;
-      background: #f4f8fc;
-      color: #243447;
+      /* 溫潤米杏底色 */
+      background: #f7f3ee !important;
+      color: #3e3228 !important;
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(135deg, #1686a7, #374ca6);
-      color: white;
+      /* 復古深焙咖啡木質漸層 */
+      background: linear-gradient(135deg, #3d2b1f, #221711) !important;
+      color: #fdfaf6 !important;
       text-align: center;
       padding: 65px 20px;
     }
-    header h1 { font-size: 36px; margin-bottom: 12px; }
-    header p { font-size: 18px; opacity: 0.95; }
+    header h1 { font-size: 36px; margin-bottom: 12px; letter-spacing: 1px; color: #ffffff !important; }
+    header p { font-size: 18px; color: #d7ccc8 !important; }
     nav {
-      background: white;
+      background: #ffffff !important;
       text-align: center;
       padding: 18px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 10px rgba(61, 43, 31, 0.08);
     }
     nav a {
-      color: #236b96;
+      color: #5d4037 !important;
       text-decoration: none;
       margin: 0 16px;
       font-weight: bold;
       font-size: 16px;
     }
     nav a:hover, nav a.active {
-      color: #1686a7;
+      color: #8d6e63 !important;
       text-decoration: underline;
     }
     .contact-container {
@@ -47,13 +48,14 @@ HTML
       gap: 40px;
     }
     .info-box {
-      background: white;
+      background: #ffffff !important;
       padding: 35px 30px;
       border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 15px rgba(61, 43, 31, 0.06);
+      border: 1px solid #ede6df;
     }
     .info-box h2 {
-      color: #205c91;
+      color: #4e342e !important;
       font-size: 24px;
       margin-bottom: 25px;
     }
@@ -62,36 +64,37 @@ HTML
     }
     .info-label {
       font-size: 13px;
-      color: #64748b;
+      color: #8d6e63 !important;
       margin-bottom: 4px;
       font-weight: bold;
     }
     .info-value {
       font-size: 18px;
       font-weight: bold;
-      color: #1686a7;
+      color: #5d4037 !important;
       text-decoration: none;
       display: inline-block;
     }
     .info-desc {
       font-size: 13px;
-      color: #888;
+      color: #8c827a;
       margin-top: 4px;
     }
     .form-box {
-      background: white;
+      background: #ffffff !important;
       padding: 35px 30px;
       border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 15px rgba(61, 43, 31, 0.06);
+      border: 1px solid #ede6df;
     }
     .form-box h2 {
-      color: #205c91;
+      color: #4e342e !important;
       font-size: 24px;
       margin-bottom: 10px;
     }
     .form-subtitle {
       font-size: 14px;
-      color: #64748b;
+      color: #8d6e63 !important;
       margin-bottom: 25px;
     }
     .form-group {
@@ -106,27 +109,28 @@ HTML
       display: block;
       font-size: 14px;
       font-weight: bold;
-      color: #334155;
+      color: #3e3228 !important;
       margin-bottom: 6px;
     }
     input, select, textarea {
       width: 100%;
       padding: 11px 13px;
-      border: 1px solid #cbd5e1;
+      border: 1px solid #d7ccc8;
       border-radius: 8px;
       font-size: 14px;
-      background: #f8fafc;
+      background: #faf8f5;
+      color: #3e3228;
       outline: none;
       font-family: inherit;
     }
     input:focus, select:focus, textarea:focus {
-      border-color: #1686a7;
-      background: white;
+      border-color: #5d4037;
+      background: #ffffff;
     }
     .submit-btn {
       width: 100%;
-      background: linear-gradient(135deg, #1686a7, #374ca6);
-      color: white;
+      background: linear-gradient(135deg, #3d2b1f, #221711) !important;
+      color: #fdfaf6 !important;
       border: none;
       padding: 14px;
       border-radius: 8px;
@@ -134,14 +138,15 @@ HTML
       font-weight: bold;
       cursor: pointer;
       margin-top: 10px;
+      transition: opacity 0.2s;
     }
     .submit-btn:hover {
-      opacity: 0.92;
+      opacity: 0.9;
     }
     footer {
       text-align: center;
-      background: #243447;
-      color: white;
+      background: #2b1d16 !important;
+      color: #d7ccc8 !important;
       padding: 25px;
       margin-top: 50px;
     }
@@ -161,18 +166,17 @@ HTML
   <nav>
     <a href="index.html">首頁</a>
     <a href="index.html#features">空間特色</a>
-    <a href="index.html#about">關於我們</a>
+    <a href="about.html">關於我們</a>
     <a href="contact.html" class="active">聯絡我們</a>
   </nav>
 
   <main class="contact-container">
-    <!-- 左側店家資訊 -->
     <div class="info-box">
       <h2>來店坐坐與交流</h2>
 
       <div class="info-item">
         <div class="info-label">聯絡電話</div>
-        <a href="tel:0987131464" class="info-value">0987-131-464↗</a>
+        <a href="tel:0987131464" class="info-value">0987-131-464 ↗</a>
         <div class="info-desc">歡迎來電預約或詢問店況</div>
       </div>
 
@@ -184,12 +188,11 @@ HTML
 
       <div class="info-item">
         <div class="info-label">營業時間</div>
-        <div style="font-weight: bold; color: #334155;">週五至週ㄧ 11:00 - 19:00</div>
+        <div style="font-weight: bold; color: #3e3228;">週五至週一 11:00 - 19:00</div>
         <div class="info-desc">週二三四固定公休（老物尋寶日）</div>
       </div>
     </div>
 
-    <!-- 右側留言表單（已帶入專屬收信網址） -->
     <div class="form-box">
       <h2>留下你想對我們說的話</h2>
       <p class="form-subtitle">無論是老物交流、座位預約或合作洽詢，都歡迎寫信給我們。</p>
