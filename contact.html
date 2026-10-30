@@ -1,0 +1,141 @@
+HTML<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們 | 台灣網路行銷推薦</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f7f9fa; color: #333; line-height: 1.6; }
+    
+    /* 導覽列 */
+    header { background-color: #1a1e21; color: #fff; padding: 18px 8%; display: flex; justify-content: space-between; align-items: center; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: bold; font-size: 1.1rem; }
+    .logo-icon { background: #b0e633; color: #1a1e21; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 4px; font-size: 16px; font-weight: 900; }
+    .logo span { font-size: 0.75rem; color: #8c9ba5; display: block; font-weight: normal; letter-spacing: 0.5px; }
+    nav a { color: #cfd8dc; text-decoration: none; margin-left: 25px; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: #fff; border-bottom: 2px solid #b0e633; padding-bottom: 4px; }
+
+    /* 主視覺 Hero 區塊 */
+    .hero { background-color: #1a1e21; color: #fff; padding: 80px 8% 90px; }
+    .sub-title { font-size: 0.8rem; color: #8c9ba5; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
+    .hero h1 { font-size: 2.8rem; line-height: 1.3; font-weight: 700; margin-bottom: 25px; }
+    .hero p { color: #a4b3be; font-size: 1.05rem; }
+
+    /* 聯絡資訊與表單區塊 */
+    .contact-container { padding: 70px 8%; display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; max-width: 1200px; margin: 0 auto; }
+    .left-col h3 { font-size: 1.8rem; margin: 10px 0 35px; }
+    .contact-item { margin-bottom: 30px; }
+    .contact-item .label { font-size: 0.75rem; color: #888; margin-bottom: 5px; }
+    .contact-item .value { font-size: 1.3rem; font-weight: bold; color: #111; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+    .contact-item .desc { font-size: 0.8rem; color: #888; margin-top: 3px; }
+
+    /* 表單樣式 */
+    .form-card { background: #fff; border: 1px solid #e1e7ec; border-radius: 8px; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+    .form-card h2 { font-size: 1.6rem; margin-bottom: 8px; }
+    .form-card .desc { font-size: 0.85rem; color: #777; margin-bottom: 25px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
+    .form-group { display: flex; flex-direction: column; margin-bottom: 15px; }
+    .form-group label { font-size: 0.85rem; font-weight: bold; margin-bottom: 6px; color: #333; }
+    .form-group input, .form-group select, .form-group textarea { padding: 10px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.9rem; background: #fafafa; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #2b7a4b; background: #fff; }
+    .checkbox-group { display: flex; align-items: flex-start; gap: 8px; font-size: 0.75rem; color: #666; margin: 20px 0; }
+    
+    .btn-submit { width: 100%; background: #1a1e21; color: #fff; border: none; padding: 14px; font-size: 1rem; font-weight: bold; border-radius: 4px; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; transition: 0.2s; }
+    .btn-submit:hover { background: #2c3237; }
+    .form-footnote { font-size: 0.75rem; color: #888; margin-top: 12px; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon">↗</div>
+      <div>
+        台灣網路行銷推薦
+        <span>TAIWAN DIGITAL MARKETING</span>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="contact.html" class="active">聯絡我們</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="sub-title">CONTACT / 聯絡我們</div>
+    <h1>你的下一步，<br>從一場對話開始。</h1>
+    <p>想提升品牌曝光，或還在尋找行銷方向？歡迎把想法告訴我們。</p>
+  </section>
+
+  <main class="contact-container">
+    <div class="left-col">
+      <div class="sub-title">GET IN TOUCH</div>
+      <h3>選擇你習慣的方式，<br>與我們聯絡。</h3>
+      
+      <div class="contact-item">
+        <div class="label">01 / 電話諮詢</div>
+        <a href="tel:0988665685" class="value">0988-665-685 ↗</a>
+        <div class="desc">點一下，立即撥號</div>
+      </div>
+
+      <div class="contact-item">
+        <div class="label">02 / LINE 聯絡</div>
+        <a href="#" class="value">va1018 ↗</a>
+        <div class="desc">也可於 LINE 搜尋 ID</div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="form-card">
+        <div class="sub-title">TELL US YOUR IDEA</div>
+        <h2>留下你的行銷需求</h2>
+        <div class="desc">填寫以下資訊，方便我們了解並回覆您的詢問。<br>*為必填欄位。</div>
+
+        <form>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>您的稱呼 *</label>
+              <input type="text" placeholder="如何稱呼您？" required>
+            </div>
+            <div class="form-group">
+              <label>聯絡電話</label>
+              <input type="tel" placeholder="方便聯絡的電話">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>電子郵件 *</label>
+            <input type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label>想了解的服務</label>
+            <select>
+              <option>SEO 搜尋引擎優化</option>
+              <option>內容行銷與社群經營</option>
+              <option>網站建置與體驗優化</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>需求說明 *</label>
+            <textarea rows="4" placeholder="請簡單說明您的產業、網站或想達成的目標。" required></textarea>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">我同意提供上述資料供本次諮詢聯繫使用，並了解表單將透過 Google Apps Script 處理及寄送至服務信箱。</label>
+          </div>
+
+          <button type="submit" class="btn-submit">送出諮詢需求 ↗</button>
+          <div class="form-footnote">送出後會顯示 Google 寄信服務的處理結果。若無法送出，請直接來電、加 LINE 或寄信。</div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
+   
